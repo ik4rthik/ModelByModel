@@ -24,13 +24,6 @@ This repository is a growing collection of AI/ML projects, experiments, and real
 
 Machine learning model for predicting diabetes risk using healthcare datasets and classification algorithms.
 
-### 🎬 Movie Recommendation System
-
-Content-based recommendation engine that suggests movies based on user preferences and similarity scoring.
-
-### 📰 Spam Detection Model
-
-Text classification project for detecting spam messages using NLP and ML techniques.
 
 > More projects and experiments will be added continuously as the learning journey evolves.
 
