@@ -1,102 +1,103 @@
 # 📚 02_RAG_Data_Ingestion
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
-![LangChain](https://img.shields.io/badge/LangChain-Framework-green)
+![LangChain](https://img.shields.io/badge/LangChain-RAG-green)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
-![VS Code](https://img.shields.io/badge/VSCode-Editor-blue?logo=visualstudiocode)
 ![PyMuPDF](https://img.shields.io/badge/PyMuPDF-PDF%20Loader-red)
 
-## 🚀 About This Project
+## 🚀 About
 
-This project is part of my **ModelByModel** AI learning journey.
+A beginner-friendly RAG project focused on understanding how documents move through a Retrieval-Augmented Generation pipeline using LangChain.
 
-In this project, I explored the **Data Ingestion Pipeline** of RAG (Retrieval-Augmented Generation) systems using LangChain.
-Instead of jumping directly into AI chatbots, I focused on understanding how raw documents are converted into structured data for AI applications.
+Instead of directly building a chatbot, this project explores the core foundation of RAG systems:
 
-The project includes:
+* Document Loading
+* Metadata Handling
+* Data Ingestion
+* Retrieval Flow Understanding
 
-* Loading text files
-* Loading PDF documents
-* Creating custom `Document` objects
-* Working with metadata
-* Understanding document ingestion workflows
+---
+
+# 🔄 RAG Pipeline Flow
+
+```text id="w0r7zc"
+                 ┌────────────────────┐
+                 │   Raw Documents    │
+                 │ PDF / TXT Files    │
+                 └─────────┬──────────┘
+                           │
+                           ▼
+                 ┌────────────────────┐
+                 │ Document Loaders   │
+                 │ TextLoader         │
+                 │ PyMuPDFLoader      │
+                 │ DirectoryLoader    │
+                 └─────────┬──────────┘
+                           │
+                           ▼
+                 ┌────────────────────┐
+                 │ LangChain Document │
+                 │ page_content       │
+                 │ metadata           │
+                 └─────────┬──────────┘
+                           │
+                           ▼
+                 ┌────────────────────┐
+                 │ Text Splitting     │
+                 │ Chunk Creation     │
+                 └─────────┬──────────┘
+                           │
+                           ▼
+                 ┌────────────────────┐
+                 │ Embeddings Model   │
+                 └─────────┬──────────┘
+                           │
+                           ▼
+                 ┌────────────────────┐
+                 │ Vector Database    │
+                 └─────────┬──────────┘
+                           │
+                    User Query
+                           │
+                           ▼
+                 ┌────────────────────┐
+                 │ Similarity Search  │
+                 │ Retriever Pipeline │
+                 └─────────┬──────────┘
+                           │
+                           ▼
+                 ┌────────────────────┐
+                 │ Retrieved Context  │
+                 └─────────┬──────────┘
+                           │
+                           ▼
+                 ┌────────────────────┐
+                 │        LLM         │
+                 └─────────┬──────────┘
+                           │
+                           ▼
+                 ┌────────────────────┐
+                 │   Final Response   │
+                 └────────────────────┘
+```
 
 ---
 
 # 🧠 What I Learned
 
-## 📌 Understanding RAG Workflow
-
-I studied the overall flow of a RAG system:
-
-```text
-Raw Data
-   ↓
-Document Loaders
-   ↓
-Document Objects
-   ↓
-Text Splitting
-   ↓
-Embeddings
-   ↓
-Vector Database
-   ↓
-Retriever
-   ↓
-LLM Response
-```
+* Creating LangChain `Document` objects
+* Working with metadata
+* Loading `.txt` files using `TextLoader`
+* Loading multiple files using `DirectoryLoader`
+* Reading PDFs using `PyMuPDFLoader`
+* Understanding Data Ingestion Pipeline
+* Understanding Retrieval Pipeline
+* Understanding why RAG systems can fail
+* Understanding how AI systems process external knowledge
 
 ---
 
-# 📂 Topics Covered
-
-## ✅ Document Objects
-
-Created custom LangChain `Document` objects using:
-
-* `page_content`
-* `metadata`
-
-Example metadata:
-
-* source
-* author
-* pages
-* created date
-
----
-
-## ✅ Text File Loading
-
-Learned how to:
-
-* Create sample `.txt` files
-* Read files using `TextLoader`
-* Convert text files into LangChain documents
-
----
-
-## ✅ Directory Loading
-
-Used `DirectoryLoader` to:
-
-* Load multiple files together
-* Process files automatically using glob patterns
-
----
-
-## ✅ PDF Loading
-
-Used `PyMuPDFLoader` to:
-
-* Read PDF files
-* Extract document contents
-* Access metadata from PDFs
-
----
-
-# ⚙️ Tools & Technologies Used
+# ⚙️ Technologies Used
 
 * Python
 * LangChain
@@ -106,9 +107,9 @@ Used `PyMuPDFLoader` to:
 
 ---
 
-# 📁 Project Structure
+# 📂 Project Structure
 
-```bash
+```bash id="0wqk0s"
 02_RAG_Data_Ingestion/
 │
 ├── data/
@@ -119,47 +120,23 @@ Used `PyMuPDFLoader` to:
 │   └── document.ipynb
 │
 ├── requirements.txt
-├── README.md
-└── .gitignore
+├── .gitignore
+└── README.md
 ```
 
 ---
 
-# 📚 Key Concepts Understood
-
-* RAG Architecture
-* Data Ingestion Pipeline
-* Retrieval Pipeline
-* Document Loaders
-* Metadata Handling
-* Structured Document Processing
-
----
-
-# ⚠️ Challenges & Insights
-
-During learning, I also understood some practical limitations of RAG systems:
-
-* Higher computational cost
-* Retrieval latency
-* Poor chunking can reduce answer quality
-* Incorrect retrieval can still lead to hallucinated responses
-
-This helped me understand that building a good RAG system is not only about using an LLM, but also about designing an effective retrieval pipeline.
-
----
-
-# 🎯 Next Learning Goals
+# 🎯 Next Step
 
 * Text Chunking
-* RecursiveCharacterTextSplitter
 * Embeddings
 * Vector Databases
 * Similarity Search
-* Retriever Pipelines
+* Retriever Systems
 
 ---
 
-# 📌 Part of My AI Learning Journey
+## 📌 Part of My ModelByModel AI Learning Journey
 
-This repository is one step in my journey of learning AI systems practically by building projects and understanding concepts deeply instead of only following tutorials.
+Learning AI by understanding systems deeply instead of blindly following tutorials.
+
