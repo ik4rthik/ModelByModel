@@ -1,60 +1,132 @@
 # 🤖 ModelByModel
 
-Building my Artificial Intelligence and Machine Learning journey — one model at a time.
+> Learning Artificial Intelligence by building every concept from scratch — one model, one project, one experiment at a time.
 
-This repository is a growing collection of AI/ML projects, experiments, and real-world implementations developed while exploring machine learning concepts through practical problem solving.
+ModelByModel is my personal AI engineering repository where I document my journey through practical implementations of Machine Learning, Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), Vector Databases, and Agentic AI.
 
----
-
-## 🧠 What This Repository Focuses On
-
-* 📊 Machine Learning Fundamentals
-* 🤖 Predictive Models
-* 🧪 Experimentation & Model Training
-* 📈 Data Analysis & Visualization
-* 🧹 Data Preprocessing
-* 🎯 Real-world AI Applications
-* 🔍 Learning Through Projects
+Instead of only learning theory, every concept is implemented as a standalone project to understand **how AI systems actually work behind the scenes.**
 
 ---
 
-## 🚀 Featured Projects
+# 🚀 Repository Roadmap
 
-### 🩺 Diabetes Prediction System
+| No. | Project | Description |
+|:---:|----------|-------------|
+| ✅ 01 | 🩺 Diabetes Prediction | Machine Learning classification project |
+| ✅ 02 | 📄 RAG Data Ingestion | Loading and processing documents |
+| ✅ 03 | ✂️ RAG Chunking | Intelligent text chunking techniques |
+| ✅ 04 | 🧠 RAG Embeddings & Vector Store | Generate embeddings and store vectors |
+| ✅ 05 | 🔍 RAG Vector Retriever | Semantic retrieval using embeddings |
+| ✅ 06 | 🤖 RAG LLM Integration | Connect retrieved context with an LLM |
+| ✅ 07 | ⚙️ Advanced RAG Pipeline | End-to-end Retrieval-Augmented Generation |
+| ✅ 08 | 📚 Citations & Conversation History | Memory, citations and response improvements |
+| ✅ 09 | 🍃 MongoDB Vector Search RAG | RAG using MongoDB Atlas Vector Search |
 
-Machine learning model for predicting diabetes risk using healthcare datasets and classification algorithms.
-
-
-> More projects and experiments will be added continuously as the learning journey evolves.
-
----
-
-## 🛠️ Technologies & Tools
-
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* TensorFlow
-* Matplotlib
-* Jupyter Notebook
+> 🚧 More AI projects coming soon...
 
 ---
 
-## 🎯 Goal
+# 🧠 Areas I'm Exploring
 
-To strengthen AI/ML knowledge by building projects, experimenting with models, and understanding how intelligent systems solve real-world problems.
+- 🤖 Machine Learning
+- 🧠 Large Language Models (LLMs)
+- 📄 Retrieval-Augmented Generation (RAG)
+- 🍃 MongoDB Atlas Vector Search
+- 📦 ChromaDB & Vector Databases
+- 🔍 Semantic Search
+- 📝 Prompt Engineering
+- ⚡ LangChain
+- 🧩 AI Agents
+- 🧠 Memory Systems
+- 🔗 MCP (Model Context Protocol)
+- 🚀 Production AI Applications
 
 ---
 
-## 📚 Learning Philosophy
+# 🛠️ Tech Stack
 
-> Learn → Build → Break → Improve → Repeat
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=python,mongodb,git,github,vscode" />
+
+<br><br>
+
+<img src="https://img.shields.io/badge/LangChain-121212?style=for-the-badge&logo=chainlink&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/SentenceTransformers-FF6F00?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/ChromaDB-5B3FD6?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Groq-000000?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas"/>
+
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy"/>
+
+<img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter"/>
+
+</p>
 
 ---
 
-## 👨‍💻 Author
+# 🎯 Repository Goal
 
-**Karthik S**
-CSE (Artificial Intelligence)
-Adi Shankara Institute of Engineering and Technology (ASIET)
+This repository is designed to document my journey from **Machine Learning** to **Production-ready AI Systems** by implementing every important AI concept independently.
+
+Each folder focuses on one concept so that the learning process remains structured and easy to revisit.
+
+---
+
+# 📚 Learning Philosophy
+
+```text
+Learn
+   ↓
+Understand
+   ↓
+Build
+   ↓
+Break
+   ↓
+Debug
+   ↓
+Improve
+   ↓
+Repeat
+```
+
+---
+
+# 📈 Current Focus
+
+- ✅ Retrieval-Augmented Generation (RAG)
+- ✅ Vector Databases
+- ✅ MongoDB Atlas Vector Search
+- ✅ AI Agents
+- 🔄 Production AI Applications
+- 🔜 Multi-Agent Systems
+- 🔜 Agent Memory
+- 🔜 Agent Evaluation
+- 🔜 MCP Tool Calling
+
+---
+
+
+
+# 👨‍💻 Author
+
+### **Karthik S**
+
+🎓 B.Tech Computer Science & Engineering (Artificial Intelligence)
+
+🏫 Adi Shankara Institute of Engineering and Technology (ASIET)
+
+🚀 Passionate about AI Engineering, LLMs, RAG Systems, Agentic AI and Production AI Applications.
+
+---
+
+## ⭐ If you like this repository, consider giving it a star!
