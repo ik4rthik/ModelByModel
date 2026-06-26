@@ -1,0 +1,6 @@
+pymongo
+openai
+langchain
+langchain-openai
+langchain_community
+pypdf
